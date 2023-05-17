@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+  />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/fonts.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                
+                <ul>
+                    <li class="header__logo"><a href="/index.html"><img src="/img/497ae438d8979a2e.png" alt=""></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="salty__gallery">
+        <div class="container">
+            <form method="get" action="/product.html">
+                <button class="back">Вернуться назад</button>
+            </form>
+            <div class="flex flex-wrap justify-center max-w-5xl mx-auto px-6">
+                <div class="salty__wrap">
+                    <div class="carousel">
+                        <div class="carousel__slide">
+                            <a data-fancybox="gallery" href="/img/fresh/1.jpg">
+                                <img class="rounded" src="/img/fresh/1.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/2.jpg">
+                                <img class="rounded" src="/img/fresh/2.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/3.jpg">
+                                <img class="rounded" src="/img/fresh/3.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/4.jpg">
+                                <img class="rounded" src="/img/fresh/4.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/5.jpg">
+                                <img class="rounded" src="/img/fresh/5.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/6.jpg">
+                                <img class="rounded" src="/img/fresh/6.jpg" />
+                            </a>
+                        </div>
+                        <div class="carousel__slide">
+                            <a data-fancybox="gallery" href="/img/fresh/1.jpg">
+                                <img class="rounded" src="/img/fresh/1.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/2.jpg">
+                                <img class="rounded" src="/img/fresh/2.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/3.jpg">
+                                <img class="rounded" src="/img/fresh/3.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/4.jpg">
+                                <img class="rounded" src="/img/fresh/4.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/5.jpg">
+                                <img class="rounded" src="/img/fresh/5.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/6.jpg">
+                                <img class="rounded" src="/img/fresh/6.jpg" />
+                            </a>
+                        </div>
+                        <div class="carousel__slide">
+                            <a data-fancybox="gallery" href="/img/fresh/1.jpg">
+                                <img class="rounded" src="/img/fresh/1.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/2.jpg">
+                                <img class="rounded" src="/img/fresh/2.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/3.jpg">
+                                <img class="rounded" src="/img/fresh/3.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/4.jpg">
+                                <img class="rounded" src="/img/fresh/4.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/5.jpg">
+                                <img class="rounded" src="/img/fresh/5.jpg" />
+                            </a>
+                            <a data-fancybox="gallery" href="/img/fresh/6.jpg">
+                                <img class="rounded" src="/img/fresh/6.jpg" />
+                            </a>
+                        </div>
+                      </div>
+                </div>  
+              </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Контактная информация:</p>
+
+        </div>
+    </footer> 
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            Thumbs: {
+                Carousel: {
+                fill: false,
+                center: true,
+                
+                },
+            },
+        });
+        const myCarousel = new Carousel(document.querySelector(".carousel"), {
+            
+        });
+    </script>
+</body>
+</html>

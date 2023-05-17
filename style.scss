@@ -1,0 +1,822 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.header{
+  background-color: #f1f2f6;
+    min-width: 100%;
+    height: 127px;
+    display: flex;
+    align-items: center;
+    img{
+           height: 145px; 
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        ul{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            li{
+                
+                list-style-type: none;
+                
+                a{
+                    text-decoration: none;
+                    color: #fdf0d5;
+                    font-family: 'Overpass', sans-serif;
+                    font-size: 30px;
+                }
+            }
+        }
+    }   
+    
+}
+
+
+.animate__animated.animate__fadeInDown{
+    --animate-duration: 2s;
+}
+.animate__animated.animate__lightSpeedInRight{
+    --animate-duration: 2s;
+}
+.animate__animated.animate__fadeInUp{
+    --animate-duration: 2s;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.wrapper{
+    background-image: url(/img/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about_us{
+    
+    
+}
+button{
+    a{
+        text-decoration: none;
+        color: black;
+        
+        
+    }
+}
+
+.collapsible{
+    
+    min-width: 100%;
+    height: 300px;
+    background-color:rgba(214, 206, 147, 0.8);
+    opacity: 0.9;
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 50px;
+    border: none;
+}
+
+.active,
+.collapsible:hover {
+    background-color:rgba(243,91,4, 0.7);
+    transition: 0.8s ease;
+}
+    
+@media (max-width: 500px){
+  .collapsible3{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 25px !important;
+    border: none;
+  }
+  .collapsible2{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 25px !important;
+    border: none;
+  }
+  .collapsible{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 25px !important;
+    border: none;
+  }
+}
+    
+    
+    
+.collapsible2{
+    min-width: 100%;
+    height: 270px;
+    background-color: rgba(70, 143, 175, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 50px;
+    border: none;
+}
+
+.active,
+.collapsible2:hover {
+    background-color:rgba(243,91,4, 0.7);
+    transition: 0.8s ease;
+}
+
+.collapsible3{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 50px;
+    border: none;
+}
+
+.active,
+.collapsible3:hover {
+    background-color:rgba(243,91,4, 0.7);
+    transition: 0.8s ease;
+}
+        
+
+.footer{
+    background-color: #780000;
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    height: 150px;
+    font-family: 'Overpass';
+    p{
+        
+        margin: 0px;
+        color: white;
+        font-size: 24px;
+    }
+}
+
+
+
+.about_us1{
+  background-color: #023e8a;
+  h1{
+      text-align: center;
+      margin: 0px;
+      color: white;
+      font-family: 'Overpass';
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+  P{
+      text-align: center;
+      margin: 0px;
+      color: white;
+      font-family: 'Overpass';
+      font-size: 25px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      
+  }
+}
+
+.about_us-gallery{
+  
+  background-color: #023e8a;
+  .fotorama{
+      background-color: #023e8a;
+      display: flex;
+      justify-content: center;
+      a{
+        img{
+          
+        }
+      }
+      
+  }
+  .fotorama__img{
+    max-height: 600px !important;
+    
+  }
+}
+
+
+
+
+
+.gallery {
+  
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+}
+.gallery img {
+    
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+
+
+
+
+
+
+
+
+
+
+#portfolio {  
+  margin-bottom: 0px !important;
+  margin: 1rem 0;
+  -webkit-column-count: 3; 
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  -webkit-column-width: 33.33333333333333%;
+  -moz-column-width: 33.33333333333333%;
+  column-width: 33.33333333333333%;
+  p{ 
+      padding:10px; 
+      border-bottom: 1px #ccc dotted; 
+      text-decoration: none; 
+      font-family: lato; 
+      text-transform:uppercase; 
+      font-size: 12px; 
+      color: #333; 
+      display:block; 
+      float:left;
+    }
+    .tile { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: all 350ms ease;
+      transition: all 350ms ease;
+  
+  }
+  .tile:hover { 
+  
+  }
+  
+  .scale-anm {
+    transform: scale(1);
+  }
+  
+  
+  
+  
+  p:hover { 
+    cursor:pointer; 
+    background: #333; 
+    color:#eee; }
+  
+  
+  
+  
+  
+  ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  
+  
+  
+}
+.tile img {
+max-width: 100%;
+width: 100%;
+height: auto;
+margin-bottom: 1rem;
+
+}
+.toolbar{
+text-align: center;
+margin: 0px;
+padding-top: 20px;
+}
+
+
+.btn {
+      
+text-align: center;
+font-family: 'Overpass';
+font-size: 1rem;
+font-weight: normal;
+text-decoration: none;
+cursor: pointer;
+display: inline-block;
+line-height: normal;
+padding: .5rem 1rem;
+margin: 0;
+height: auto;
+border: 0px solid;
+vertical-align: middle;
+-webkit-appearance: none;
+color: white;
+background-color: blue;
+}
+
+.btn:hover {
+text-decoration: none;
+}
+
+.btn:focus {
+outline: none;
+border-color: var(--darken-2);
+box-shadow: 0 0 0 3px var(--darken-3);
+}
+
+.footer{
+p{
+  padding: 0px !important;
+}
+}
+
+.product1{
+  background-color: #168aad;
+}
+
+
+
+.salty{
+    
+  min-width: 100%;
+  height: 200px;
+  background-color:rgba(255, 236, 209, 0.8);
+  opacity: 0.9;
+  color: black;
+  font-family: 'Overpass';
+  
+  font-size: 50px;
+  border: none;
+}
+
+.active,
+.salty:hover {
+  background-color:rgba(243,91,4, 0.7);
+  transition: 0.8s ease;
+}
+
+
+
+
+.smoked{
+    
+  min-width: 100%;
+  height: 205px;
+  background-color:rgba(70, 143, 175, 0.7);
+  opacity: 0.9;
+  color: white;
+  font-family: 'Overpass';
+  
+  font-size: 50px;
+  border: none;
+}
+
+.active,
+.smoked:hover {
+  background-color:rgba(243,91,4, 0.7);
+  transition: 0.8s ease;
+}
+
+
+.dried{
+    
+  min-width: 100%;
+  height: 200px;
+  background-color: rgba(1, 58, 99, 0.7);
+  opacity: 0.9;
+  color: white;
+  font-family: 'Overpass';
+  
+  font-size: 50px;
+  border: none;
+}
+
+.active,
+.dried:hover {
+  background-color:rgba(243,91,4, 0.7);
+  transition: 0.8s ease;
+}
+
+.preserve{
+    
+  min-width: 100%;
+  height: 205px;
+  background-color: rgba(2, 62, 138, 0.7);
+  opacity: 0.9;
+  color: white;
+  font-family: 'Overpass';
+  
+  font-size: 50px;
+  border: none;
+}
+
+.active,
+.preserve:hover {
+  background-color:rgba(243,91,4, 0.7);
+  transition: 0.8s ease;
+}
+
+@media (max-width: 500px){
+  .preserve{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 25px !important;
+    border: none;
+  }
+  .dried{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 25px !important;
+    border: none;
+  }
+  .smoked{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 25px !important;
+    border: none;
+  }
+  .salty{
+    min-width: 100%;
+    height: 300px;
+    background-color: rgba(1, 58, 99, 0.7);
+    color: white;
+    font-family: 'Overpass';
+    
+    font-size: 25px !important;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+.rounded{
+  width: 350px;
+  height: 250px;
+  align-items: center;
+  object-fit: cover;
+  padding: 3px;
+  
+  padding-bottom: 1px;
+}
+
+.salty__gallery{
+  background-color: rgba(2, 62, 138, 0.7);
+  background-image: url('/img/12.jpg');
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  padding-top: 15px;
+  height: 82vh;
+  min-width: 100%;
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    .back{
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      min-width: 100%;
+      font-size: 20px;
+      justify-content: center;
+      font-family: 'Overpass';
+      color: #023e8a;
+      background-color: #f1f2f6;
+      border: 1px solid;
+    }
+  }
+  
+  
+}
+
+.salty__wrap{
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100% !important;
+}
+
+.product-wrap{
+  background-image: url(/img/501701.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  min-width: 100%;
+}
+
+@media (max-width: 1180px) {
+  .rounded{
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    object-fit: cover;
+    padding: 3px;
+    
+    padding-bottom: 1px;
+  }
+  .carousel__slide{
+    width: 1150px;
+    padding-left: 100px !important;
+    
+  }
+  .carousel{
+    
+    max-width: 960px !important;
+    display: flex;
+    
+    flex-direction: column;
+    
+  }
+  .carousel__slide{
+    width: 1150px;
+    padding-left: 45px;
+    
+  }
+}
+@media (max-width: 978px) {
+  .rounded{
+    width: 200px;
+    height: 220px;
+    align-items: center;
+    object-fit: cover;
+    padding: 3px;
+    
+    padding-bottom: 1px;
+  }
+  .carousel__slide{
+    width: 1150px;
+    padding-left: 70px !important;
+    
+  }
+  .carousel{
+    padding-top: 0px !important;
+    max-width: 740px !important;
+    display: flex;
+    
+    flex-direction: column;
+    
+  }
+  .carousel__slide{
+    width: 1150px;
+    padding-left: 45px;
+    
+  }
+}
+
+@media (max-width: 750px) {
+  .rounded{
+    width: 175px;
+    height: 200px;
+    align-items: center;
+    object-fit: cover;
+    padding: 3px;
+    
+    padding-bottom: 1px;
+  }
+  .carousel__slide{
+    width: 1150px;
+    padding-left: 75px !important;
+    
+  }
+  .carousel{
+    
+    max-width: 500px !important;
+    display: flex;
+    
+    flex-direction: column;
+    
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .rounded{
+    width: 130px;
+    height: 130px;
+    align-items: center;
+    object-fit: cover;
+    padding: 3px;
+    
+    padding-bottom: 1px;
+  }
+  .carousel__slide{
+    width: 1150px;
+    padding-left: 60px !important;
+    
+  }
+  .carousel{
+    
+    max-width: 380px !important;
+    display: flex;
+    
+    flex-direction: column;
+    
+  }
+  
+  .carousel__button.is-prev {
+    margin-top: 235px;
+    margin-left: 100px;
+    left: 0px !important;
+    color: white;
+  }
+  
+  .carousel__button.is-next {
+    margin-top: 235px;
+    margin-right: 100px;
+    right: 0px !important;
+    color: white;
+  }
+}
+@media (max-width: 300px) {
+.carousel{
+  padding-top: 0px !important;
+  
+}
+.carousel__button.is-prev {
+  margin-top: 235px;
+  margin-left: 100px;
+  left: 0px !important;
+  color: white;
+}
+
+.carousel__button.is-next {
+  margin-top: 235px;
+  margin-right: 100px;
+  right: 0px !important;
+  color: white;
+}
+}
+#cardSlider {
+  --carousel-button-bg: #fff;
+
+  --carousel-button-width: 38px;
+  --carousel-button-height: 38px;
+
+  --carousel-button-svg-width: 17px;
+  --carousel-button-svg-height: 17px;
+
+  --carousel-button-svg-stroke-width: 3;
+  --carousel-button-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.carousel__button.is-prev {
+  left: 20px;
+  color: white;
+}
+
+.carousel__button.is-next {
+  right: 20px;
+  color: white;
+}
+
+.carousel{
+  max-width: 1180px;
+  display: flex;
+  
+  flex-direction: column;
+  
+}
+.carousel__slide{
+  width: 1150px;
+  padding-left: 45px;
+  
+}
+
+.carousel__dots{
+  color: white;
+}
