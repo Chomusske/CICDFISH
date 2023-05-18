@@ -1,19 +1,19 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
-jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+jobs: 
+  Explore-GitHub-Actions: #название репы
+    runs-on: ubuntu-latest # версия ос
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2 #делает pull репозитория и ветки, в котором запущен. Таким образом мы получаем доступ к коду.
+        uses: actions/checkout@v2 #после пуша гитхаб создает свой экшен и проверят код по синтаксису
       - name: Deploy to VPS
         uses: appleboy/ssh-action@master #экшен для инициализации подключения по SSH и выполнения скрипта 
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
-          script: |
-            cd /var/www/html
+          script: | # перейти в папку, пул это пул, последнее рестартит сайт
+            cd /var/www/html 
             git pull origin master
             sudo systemctl restart nginx
